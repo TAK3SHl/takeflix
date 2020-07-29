@@ -26,6 +26,8 @@
     background: var(--gray);
   }
   body {
+    --bodyPaddingTop: 60px;
+    padding-top: var(--bodyPaddingTop);
     
   }
   @media (max-width: 800px) {
