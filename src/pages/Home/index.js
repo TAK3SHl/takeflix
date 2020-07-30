@@ -4,10 +4,13 @@ import dadosIniciais from '../../data/dados_iniciais.json';
 import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
 import Footer from '../../components/Footer';
+import {Example} from '../../components/SideMenu/Example'
 
 function Home() {
   return (
     <div style={{ background: "#141414" }}>
+      <Example/>
+
       <Menu />
 
       <BannerMain 
@@ -44,6 +47,7 @@ function Home() {
       <Footer />
 
     </div>
+
   );
 }
 

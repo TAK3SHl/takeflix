@@ -2,6 +2,7 @@
 import React from 'react';
 import SlickSlider from 'react-slick';
 import styled from 'styled-components';
+import {RightArrow, Left} from '../Arrow'
 
 const Container = styled.ul`
   padding: 0;
@@ -42,14 +43,17 @@ export const SliderItem = styled.li`
 const Slider = ({ children }) => (
   <Container>
     <SlickSlider {...{
-      dots: false,
-      infinite: false,
-      speed: 300,
+      dots: true,
+      infinite: true,
+      speed: 700,
       centerMode: false,
       variableWidth: true,
       adaptiveHeight: true,
       slidesToScroll: 5,
-      slidesToShow: 5
+      slidesToShow: 5,
+      autoplay: true,
+      nextArrow: <RightArrow/>,
+      //prevArrow: <LeftArrow/>
     }}
     >
       {children}
