@@ -2,7 +2,7 @@
 import React from 'react';
 import SlickSlider from 'react-slick';
 import styled from 'styled-components';
-import {RightArrow, Left} from '../Arrow'
+import {RightArrow, LeftArrow} from '../Arrow'
 
 const Container = styled.ul`
   padding: 0;
